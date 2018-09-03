@@ -1,8 +1,8 @@
-var request = require('request');
-var fs = require('fs');
+const request = require('request');
+const fs = require('fs'); 
 
-let a =
-
+let repoOwner = process.argv[2];
+let repoName = process.argv[3];
 console.log('Welcome to the GitHub Avatar Downloader!');
 function getRepoContributors(repoOwner, repoName, cb) {
     var options = {
